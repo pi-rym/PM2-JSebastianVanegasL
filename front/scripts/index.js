@@ -30,7 +30,7 @@
         poster.src = movie.poster;
         poster.alt = movie.title;
   
-        
+        poster.classList.add('estiloimg')
         card.appendChild(title);
         card.appendChild(year);
         card.appendChild(director);

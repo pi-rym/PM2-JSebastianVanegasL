@@ -1,14 +1,27 @@
 body {
+  background-image: url(./imagenes/©Flavia-Rossi_Cinema-Troisi_001-Copia-1024x814.jpg);  
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
   }
-  
-  header {
-    background-color: #e81010;
-    color: white;
+  h1{
+    color:#3209b8;
     padding: 1rem;
     text-align: center;
+    font-size: 40px;
+  }
+  
+  header {
+    color: rgb(205, 117, 11);
+    padding: 1rem;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    border: 1px solid #f0ecea;
+    border-radius: 8px;
+    margin: 1rem;
+    background-color: gray;
+    
   }
   
   main {
@@ -19,16 +32,22 @@ body {
   }
   
   .movie-card {
-    border: 1px solid #ddd;
+    border: 1px solid #f0ecea;
     border-radius: 8px;
     margin: 1rem;
     padding: 1rem;
     width: 300px;
+    color: #161615;
+    background-color: gray;
+    font-size: 20px;
   }
-  
-  footer {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-    text-align: center;
+  .estiloimg {
+    display: flex;
+    text-align: justify;
+    width: 300px; 
+    height: 300px; 
+    max-height: 300px; 
+    object-fit: cover; 
+    border-radius: 8px;
+     
   }

@@ -1,0 +1,10 @@
+.estilo{
+    
+    justify-content: space-around;
+    border: 1px solid #f0ecea;
+    border-radius: 8px;
+    margin: 10rem;
+    color: #161615;
+    background-color: gray;
+    font-size: 40px; 
+}
