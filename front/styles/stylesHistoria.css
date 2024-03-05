@@ -1,0 +1,104 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #555;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .container {
+    position: relative;
+    width: calc(33.33% - 20px);
+    margin-bottom: 40px;
+    overflow: hidden;
+    background-color: gray; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .paragraph {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #333; 
+    padding: 20px;
+  }
+  
+  h2 {
+    color:red; 
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .container img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+
+  @keyframes moveLetters {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .paragraph {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #333;
+    padding: 20px;
+    animation: moveLetters 2s infinite; 
+  }
+
+  .container-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .container-images img {
+    width: calc(25% - 10px); 
+    margin-bottom: 10px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .container7 {
+    width: calc(33.33% - 20px);
+  }
+  
+  .container-images {
+    width: 100%; 
+    margin-top: 20px; 
+  }
+  
+  .container-images img {
+    width: calc(25% - 10px);
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform 0.5s ease; 
+  }
+  
+  .container-images img:hover {
+    transform: perspective(1000px) rotateY(30deg); 
+  }
