@@ -6,22 +6,86 @@
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/stylesSobre.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
     <title>Sobre mi proyevto</title>
   </head>
   <body>
-    <h1>Sobre mi proyecto</h1>
     <header>
-      <a href="../index.html">Inicio</a> |
-      <a href="./aboutproyect.html">Sobre mi proyecto</a> |
-      <a href="./historia.html">Historia del cine</a> |
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Sobre el proyecto</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./aboutproyect.html">Cronologia imganes y proyecto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./historia.html">Historia del cine</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     </header>
   
-    <main class="estilo">
-    <h2> El proyecto es una api con una recopilacion con peliculas que tienen un ranking 
-        o puntaje que es una opinion mia y con base en ranking que vi en internet, preguntando tambien 
-        opiniones de mis allegados y conocidos
-    </h2>
+    <main>
+        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../styles/imagenes/primera.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../styles/imagenes/dos.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../styles/imagenes/cuatro.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div class="container-fluid bg-secondary text-white p-4" style="opacity: 0.7;">
+            <p class="fs-5 text-muted" >Crear un API de cine mientras aprendes full stack es una excelente manera de consolidar tus conocimientos y aplicarlos en un proyecto práctico y relevante. Este ejercicio te brinda la oportunidad de trabajar en el desarrollo tanto del backend como del frontend, permitiéndote integrar y gestionar datos relacionados con películas, actores, y más. Además, al construir un API, estarás aprendiendo a diseñar y documentar interfaces, mejorarás tus habilidades de manipulación de bases de datos, y ganarás experiencia en el manejo de solicitudes HTTP. En resumen, esta práctica te proporcionará un valioso conjunto de habilidades full stack mientras te sumerges en el emocionante mundo del desarrollo de aplicaciones para la industria del cine.</p>
+        </div>
+
     </main>
+
+    <footer class="footer bg-dark text-white text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-left">
+              <!-- Primera imagen a la izquierda -->
+              <img src="../styles/imagenes/ocho.webp" alt="Primera Imagen" class="img-fluid" width="250" height="200" >
+            </div>
+            <div class="col-md-6 text-right">
+              <!-- Segunda imagen a la derecha -->
+              <img src="../styles/imagenes/primera.jpg" alt="Segunda Imagen" class="img-fluid" width="300" height="300" >
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <!-- Texto con fondo -->
+              <p id="main-text">El Cine es lo mejor</p>
+            </div>
+          </div>
+        </div>
+      </footer>
 
   </body>
 </html>
