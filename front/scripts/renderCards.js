@@ -19,4 +19,4 @@ function Cards(data) {
   
 }
 
-module.expors = rendercards;
+module.exports = Cards;
