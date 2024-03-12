@@ -1,6 +1,4 @@
-const movieContainer = document.getElementById("movie-container");
-  
-    
+      
 function Cards(data) {
   return data.map((movie) => {
     const card = document.createElement("div");
