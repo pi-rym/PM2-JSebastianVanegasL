@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const moviesController = require('../controllers/moviesController');
+const { getAllMovies } = require('../controllers/moviesController');
 
-router.get('/movies', moviesController.getMovies);
+router.get('/movies', getAllMovies);
 
 module.exports = router;
