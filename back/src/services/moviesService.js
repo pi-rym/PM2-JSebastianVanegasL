@@ -1,9 +1,9 @@
-const axios = require('axios');
+const Movie = require('../models/movie');
 
 const getMovies = async () => {
   try {
-    const {data} = await axios.get('https://students-api.up.railway.app/movies');
-   return data
+    const movies = await Movie.find();
+    return movies;
   } catch (error) {
     throw new Error(error);
   }
