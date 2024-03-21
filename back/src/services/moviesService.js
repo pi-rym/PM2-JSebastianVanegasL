@@ -8,5 +8,16 @@ const getMovies = async () => {
     throw new Error(error);
   }
 }
+const createMovie = async (movieData) => {
+  try {
+      const movie = new Movie(movieData);
+      await movie.save();
+      return movie;
+  } catch (error) {
+      throw new Error(error.message);
+  }
+};
   
-  module.exports = { getMovies };
+  module.exports = { getMovies, createMovie };
+
+  

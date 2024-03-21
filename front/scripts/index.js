@@ -11,5 +11,4 @@ const asinCard = async ()=> {
     console.error("Error fetching movies:", error);
   }
 }
-
 asinCard();
